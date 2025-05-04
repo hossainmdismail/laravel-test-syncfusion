@@ -39,6 +39,7 @@
         "@radix-ui/react-toggle-group": "^1.1.2",
         "@radix-ui/react-tooltip": "^1.1.8",
         "@syncfusion/ej2-base": "^29.1.36",
+        "@syncfusion/ej2-react-documenteditor": "^29.1.40",
         "@syncfusion/ej2-react-spreadsheet": "^29.1.40",
         "@tailwindcss/vite": "^4.0.6",
         "@types/react": "^19.0.3",

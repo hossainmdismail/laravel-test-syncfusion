@@ -1,6 +1,4 @@
 @import 'tailwindcss';
-/* Syncfusion Spreadsheet styles */
-@import '~@syncfusion/ej2-react-spreadsheet/styles/material.css';
 
 @plugin 'tailwindcss-animate';
 
