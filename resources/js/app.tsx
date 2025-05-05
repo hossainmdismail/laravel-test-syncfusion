@@ -15,6 +15,10 @@ import '@syncfusion/ej2-react-spreadsheet/styles/material.css';
 import '@syncfusion/ej2-react-documenteditor/styles/material.css';
 
 
+import '@syncfusion/ej2-splitbuttons/styles/material.css';
+import '@syncfusion/ej2-dropdowns/styles/material.css';
+
+
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 
 createInertiaApp({

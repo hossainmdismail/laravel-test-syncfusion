@@ -3,10 +3,11 @@ import AppLayout from '@/layouts/app-layout';
 import { type BreadcrumbItem } from '@/types';
 import { Head } from '@inertiajs/react';
 import {
-    DocumentEditorComponent,
-    Toolbar,
-    Inject,
+    DocumentEditorContainerComponent,
+    Toolbar
 } from '@syncfusion/ej2-react-documenteditor';
+
+DocumentEditorContainerComponent.Inject(Toolbar);
 
 const breadcrumbs: BreadcrumbItem[] = [
     {
@@ -14,6 +15,7 @@ const breadcrumbs: BreadcrumbItem[] = [
         href: '/dashboard',
     },
 ];
+
 
 export default function Dashboard() {
 
@@ -29,14 +31,12 @@ export default function Dashboard() {
             <Head title="Dashboard" />
             <div className="flex h-full flex-1 flex-col gap-4 rounded-xl p-4">
                 <h1>Test</h1>
-                <DocumentEditorComponent
-                    id="documenteditor"
-                    height="600px"
+                <DocumentEditorContainerComponent
+                    id="container"
+                    width={'80%'}
+                    height={'80%'}
                     enableToolbar={true}
-                    serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/"
-                >
-                    <Inject services={[Toolbar]} />
-                </DocumentEditorComponent>
+                />
             </div>
         </AppLayout>
     );
